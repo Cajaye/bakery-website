@@ -1,0 +1,22 @@
+{
+  "name": "bakery-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "postcss ./src/styles.css -o public/style.css --watch --verbose",
+    "prod": "NODE_ENV= production postcss ./src/styles.css -o public/style.css"
+  },
+  "keywords": [],
+  "author": "Ca-Jaye Clarke",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "cssnano": "^5.0.8",
+    "tailwindcss": "^2.2.17"
+  },
+  "dependencies": {
+    "postcss-cli": "^9.0.1",
+    "win-node-env": "^0.4.0"
+  }
+}
